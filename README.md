@@ -8,14 +8,14 @@ Supports hybrid(client-side) and server-side flows.
 Add to your `Gemfile`:
 
 ```ruby
-gem "omniauth-microsoft-live", :github => "9peso/omniauth-microsoft-live"
+gem 'omniauth-microsoft-live', github: 'jdrago999/omniauth-microsoft-live'
 ```
 
 Then run `bundle install`.
 
 ## Obtaining application key and secret
 
-* Go to 'https://account.live.com/developers/applications/'
+* Go to https://account.live.com/developers/applications/
 * Select (or create) your project.
 * Follow 'Edit Settings'
 * Follow 'App Settings'
@@ -61,6 +61,7 @@ An example of an authentication hash available in the callback by accessing `req
   },
   "credentials" =>  {
     "token" => "token",
+    "refresh_token" => "refresh_token",
     "expires_at" => 1424005505,
     "expires" => true
   },
